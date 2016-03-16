@@ -1,18 +1,17 @@
-1.相关数据说明
+bus1:PC+fan4
+bus2:pc+pad
+bus3:pc+hairdryer1
+bus4:pc+fan1
+bus5:pc+hairdryer2
+bus6:pc+phone
+bus7:pc+fan2
+bus8:pc+hairdryer3
+bus9:pc+fan3
 
- 	bus1:PC+fan4
-	bus2:pc+pad
-    bus3:pc+hairdryer1
-	bus4:pc+fan1
-	bus5:pc+hairdryer2
-	bus6:pc+phone
-	bus7:pc+fan2
-	bus8:pc+hairdryer3
-	bus9:pc+fan3
-	bus10:pc+phone+fan1->fan2->fan3->fan4->fan关->phone关->关
-    bus11:fan4->phone->phone关-pc(47)->fan3->fan2（69）->fan1（80）->fan关-关
-	bus12:hairdryer1->pc->pad(26)->hairdryer1关（38）->pad关(49)->关
-	bus13:hairdryer1->kettle(22)-hairdryer关（32）->关
-	bus14:kettle+phone
-        bus15: 0- phone1 - pad1(33)-fan1(53)-pad0(71)-fan0(82)-fan1(90)-phone0(102)-pad1(107)-phone1(118)-0-1-fan-pad -phone-0
+bus10:pc(on)+phone(on)+fan1(on)->fan2(on)->fan3(on)->fan4(on)->fan(off)->phone(off)->all(off)
+bus11:fan4(on)->phone(on)->phone关-pc(on)->fan3(on)->fan2（on）->fan1（on）->fan(off)-all(off)
+bus12:hairdryer1(on)->pc(on)->pad(on)->hairdryer1（off）->pad(off)->all(off)
+bus13:hairdryer1(on)->kettle(on)-hairdryer（off）->all(off)
+bus14:kettle+phone
+bus15: state(0)- phone(on) - pad(on)-fan1(on)-pad(off)-fan(off)-fan1(on)-phone(off)-pad(on)-phone(off)-off-on-fan(on)-pad(on) -phone(on)-all(off)
         

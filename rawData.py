@@ -131,7 +131,7 @@ if __name__ == '__main__':
 	all_metadata_save(data)
 	allData = load_metadata()
 	plt.figure(1,figsize=(9,6))
-	plt.plot(allData['data1'][1]["PF"])
+	plt.plot(allData['data1'][23]["P"])
 	plt.show()
 	
 
